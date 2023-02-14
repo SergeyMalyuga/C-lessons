@@ -13,7 +13,7 @@ Console.WriteLine("Введите число №2");
 String answer2 = Console.ReadLine();
 int number2 = Convert.ToInt32(answer2);
 
-if (number2 == number*number)
+if (number2 == number*number || number == number2*number2)
 {
     Console.WriteLine(number+" "+number2+" -> да");
 }
