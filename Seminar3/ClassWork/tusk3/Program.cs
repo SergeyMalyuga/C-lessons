@@ -20,4 +20,4 @@ double ab = Math.Pow(ax-bx,2)+Math.Pow(ay-by,2);
 Console.WriteLine(ab);
 
 ab = Math.Sqrt(ab);
-Console.WriteLine(ab);
+Console.WriteLine($"{ab:f2}");
