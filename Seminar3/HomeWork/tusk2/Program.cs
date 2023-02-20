@@ -16,7 +16,7 @@ int zb= Input("Введите координату точки B по z");
 
 double rez = Math.Pow(xb-xa,2)+Math.Pow(yb-ya,2)+Math.Pow(zb-za,2);
 rez=Math.Sqrt(rez);
-Console.WriteLine($"{rez:f2}");
+Console.WriteLine($"A ({xa},{ya},{za}); B ({xb},{yb},{zb}) -> {rez:f2}");
 
 int Input(String messageToUser)
 {
