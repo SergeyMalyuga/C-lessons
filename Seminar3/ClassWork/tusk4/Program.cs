@@ -7,8 +7,8 @@
 Console.WriteLine("Введите число!");
 double n = Convert.ToInt32(Console.ReadLine());
 
-for (int i=1; i<=n; i++)
+for (int i = 1; i <= n; i++)
 {
-    double res = Math.Pow(i,2);
-    Console.WriteLine(res+" ");
+    double res = Math.Pow(i, 2);
+    Console.WriteLine(res + " ");
 }
