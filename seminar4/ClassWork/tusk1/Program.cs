@@ -8,8 +8,8 @@
 
 int ReadNumber(string messageToUser)
 {
-    Console.WriteLine(messageToUser);
-    int value = Convert.ToInt32(Console.ReadLine());
+    System.Console.WriteLine(messageToUser);
+    int value = System.Convert.ToInt32(System.Console.ReadLine());
     return value;
 }
 
@@ -25,4 +25,4 @@ int SumToA(int a)
 
 int number = ReadNumber("Введите число A");
 int result = SumToA(number);
-Console.WriteLine(result);
+System.Console.WriteLine(result);
