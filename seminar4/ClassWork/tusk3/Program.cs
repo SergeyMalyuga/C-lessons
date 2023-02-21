@@ -12,3 +12,5 @@ foreach (var a in array)
 {
     Console.Write("{0} ", a);
 }
+// Console.WriteLine (string.Join (",", array));
+// Console.WriteLine (string.Join ($"[{",", array}]"));
