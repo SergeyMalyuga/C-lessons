@@ -10,21 +10,23 @@ int inputData(String messageToUser)
     return number;
 }
 
-int[] randomArray(int length, int min, int max)
+double[] randomArray(int length, int min, int max)
 {
-    int[] array = new int[length];
+    double[] array = new double[length];
     for (int i = 0; i < array.Length; i++)
     {
-        array[i] = Random.Shared.Next(min, max);
+        int del = Random.Shared.Next(1, 5);
+        array[i] = (double)Random.Shared.Next(min, max) / del;
+        array[i] = Math.Round(array[i], 1);
     }
     return array;
 }
 
-int differenceMaxMin(int[] array)
+double differenceMaxMin(double[] array)
 {
-    int rez = 0;
-    int min = array[0];
-    int max = array[0];
+    double rez = 0;
+    double min = array[0];
+    double max = array[0];
     for (int i = 0; i < array.Length; i++)
     {
         if (array[i] < min)
@@ -44,6 +46,8 @@ int differenceMaxMin(int[] array)
 int length = inputData("Введите длину массива: ");
 int leftR = inputData("Задайте левую границу случайного диапозона: ");
 int rightR = inputData("Задайте правую границу случайного диапозона: ");
-int[] array = randomArray(length, leftR, rightR);
-int rez = differenceMaxMin(array);
+
+double[] array = randomArray(length, leftR, rightR);
+double rez = differenceMaxMin(array);
 Console.WriteLine($"[{string.Join(", ", array)}] -> {rez}");
+
