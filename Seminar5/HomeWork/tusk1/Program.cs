@@ -35,7 +35,7 @@ int evenNumbers(int[] array)
 
 int length = inputData("Введите длину массива: ");
 int leftR = inputData("Задайте левую границу случайного диапозона (трёхзначное число): ");
-int rightR = inputData("Задайте левую границу случайного диапозона (трёхзначное число): ");
+int rightR = inputData("Задайте правую границу случайного диапозона (трёхзначное число): ");
 if (leftR >= 100 && leftR < 1000 && rightR >= 100 && rightR < 1000)
 {
     int[] array = randomArray(length, leftR, rightR);
